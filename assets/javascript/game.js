@@ -30,11 +30,6 @@ document.onkeyup = function(event){
         }
       computerArray.push(computerChoice);
       playerChoice.push(key);
-        // console.log(left);
-          
-        // var computerChoice = options[Math.floor(Math.random() * options.length)];
-          // console.log(computerChoice);
-          // console.log(key);
 
         var keyLog = document.getElementById("displayResults");
            keyLog.innerHTML = ("You Chose: " + playerChoice);
@@ -47,7 +42,7 @@ if (computerChoice === key){
   guesses = 9;
   guessesSpan.innerHTML = guesses;
   soFarDiv.innerHTML = ("Dr. Venkman Chose: " + computerChoice);
-  alert("You are psychic!");
+  alert("You're psychic!  ...or lucky.  You won!");
   computerChoice = options[Math.floor(Math.random() * options.length)];
   playerChoice = [];
 

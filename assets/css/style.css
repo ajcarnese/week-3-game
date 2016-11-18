@@ -27,8 +27,9 @@ h2 {
 div {
 	background-color: black;
 	font-family: 'Quattrocento', serif;
-	font-style: 700;
 	color: white;
+	font-weight: 700;
+	font-size: 25px;
 }
 
 .jumbotron {
