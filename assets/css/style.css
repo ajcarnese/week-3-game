@@ -1,0 +1,36 @@
+html {
+	background: url(../images/background1.jpg);
+	background-repeat:no-repeat;
+    background-size:cover;
+}
+
+body {
+	text-align: center;
+	background-color: transparent;
+
+
+}
+
+img {
+    width:300px;
+    height: auto
+}
+
+#title {
+	font-family: 'Bungee Inline', cursive;
+}
+
+h2 {
+	font-family: 'Righteous', cursive;
+}
+
+div {
+	background-color: black;
+	font-family: 'Quattrocento', serif;
+	font-style: 700;
+	color: white;
+}
+
+.jumbotron {
+	background-color:transparent;
+}

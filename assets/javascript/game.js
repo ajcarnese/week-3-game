@@ -37,7 +37,7 @@ document.onkeyup = function(event){
           // console.log(key);
 
         var keyLog = document.getElementById("displayResults");
-           keyLog.innerHTML = ("You Chose:" + key);
+           keyLog.innerHTML = ("You Chose: " + playerChoice);
             keyLog.appendChild(soFarDiv);
              
 
@@ -46,9 +46,10 @@ if (computerChoice === key){
   winsSpan.innerHTML = wins;
   guesses = 9;
   guessesSpan.innerHTML = guesses;
-  soFarDiv.innerHTML = ("Computer Chose:" + computerChoice);
+  soFarDiv.innerHTML = ("Dr. Venkman Chose: " + computerChoice);
   alert("You are psychic!");
   computerChoice = options[Math.floor(Math.random() * options.length)];
+  playerChoice = [];
 
 }else {
   guesses--;
@@ -60,9 +61,10 @@ if (guesses < 1){
           lossesSpan.innerHTML = losses;
           guesses = 9;
           guessesSpan.innerHTML = guesses;
-          soFarDiv.innerHTML = ("Computer Chose:" + computerChoice);
+          soFarDiv.innerHTML = ("Dr. Venkman Chose: " + computerChoice);
           computerChoice = options[Math.floor(Math.random() * options.length)];
           alert("You're not psychic, but I already knew that! Try Again!");
+          playerChoice = [];
 }
 
 }
