@@ -42,7 +42,7 @@ if (computerChoice === key){
   guesses = 9;
   guessesSpan.innerHTML = guesses;
   soFarDiv.innerHTML = ("Dr. Venkman Chose: " + computerChoice);
-  alert("You're psychic!  ...or lucky.  You won!");
+  alert("You got it! Let's try another..");
   computerChoice = options[Math.floor(Math.random() * options.length)];
   playerChoice = [];
 
